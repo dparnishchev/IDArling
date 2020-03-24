@@ -43,11 +43,11 @@ class EventFilter(QObject):
 
     def install(self):
         self._plugin.logger.debug("Installing the event filter")
-        qApp.instance().installEventFilter(self)
+        #qApp.instance().installEventFilter(self)
 
     def uninstall(self):
         self._plugin.logger.debug("Uninstalling the event filter")
-        qApp.instance().removeEventFilter(self)
+        #qApp.instance().removeEventFilter(self)
 
     def _replace_icon(self, label):
         pixmap = QPixmap(self._plugin.plugin_resource("idarling.png"))
